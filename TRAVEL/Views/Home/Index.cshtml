@@ -1,0 +1,85 @@
+﻿@{
+    ViewData["Title"] = "Index"; 
+}
+
+<div class="text-center">
+    <div class="jumbotron jumbotron-fluid"
+         style="
+            background-image: url('/images/j.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         ">
+        <div class="container"
+             style="
+                padding: 25px 50px;
+                border-radius: 15px;
+                display: inline-block;
+             ">
+            <h1 class="display-4" style="color: white;">Welcome to Our Pages</h1>
+            <p class="lead" style="color: white;">TravelHorizon</p>
+            <button type="button" class="btn px-4 py-2 mt-3" style="background-color: #279da4; color: #fff; border-radius: 25px; font-size: 18px;" data-bs-toggle="modal" data-bs-target="#loginModal">
+                Discover
+            </button>
+        </div>
+    </div>
+</div>
+
+<div id="carouselExample" class="carousel slide my-4" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="~/images/1.jpg" class="d-block w-100"
+                 style="height: 500px; object-fit: cover;" />
+        </div>
+        <div class="carousel-item">
+            <img src="~/images/2.jpg" class="d-block w-100"
+                 style="height: 500px; object-fit: cover;" />
+        </div>
+        <div class="carousel-item">
+            <img src="~/images/3.jpg" class="d-block w-100"
+                 style="height: 500px; object-fit: cover;" />
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+<div class="container-fluid px-5 mb-5"
+     style="
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        padding: 50px 25px;
+        color: white;
+     ">
+    <div class="content-box"
+         style="
+            background: rgba(0, 0, 0, 0.5);
+            padding: 25px;
+            border-radius: 10px;
+         ">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Our Travel Journey</h1>
+                <p style="font-size: 17px;">
+                    At Explore Philippines, we believe every journey tells a story...
+                </p>
+                <p style="font-size: 17px;">
+                    We craft adventures that highlight natural beauty and local culture.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="~/images/6.jpg" class="img-fluid" style="border-radius: 10px;" />
+            </div>
+        </div>
+    </div>
+</div>
+
+
