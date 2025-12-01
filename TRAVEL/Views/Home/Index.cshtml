@@ -21,26 +21,76 @@
              ">
             <h1 class="display-4" style="color: white;">Welcome to Our Pages</h1>
             <p class="lead" style="color: white;">TravelHorizon</p>
-            <button type="button" class="btn px-4 py-2 mt-3" style="background-color: #279da4; color: #fff; border-radius: 25px; font-size: 18px;" data-bs-toggle="modal" data-bs-target="#loginModal">
-                Discover
+            <!-- Explore button now toggles content -->
+            <button type="button" class="btn px-4 py-2 mt-3" 
+                    style="background-color: #279da4; color: #fff; border-radius: 25px; font-size: 18px;" 
+                    onclick="toggleExploreContent()">
+                Explore
             </button>
         </div>
     </div>
 </div>
 
+<!-- HIDDEN EXPLORE CONTENT -->
+<div id="exploreContent" style="display:none; margin-top:20px; color:black; background-color:#f8f9fa; padding:20px; border-radius:10px;">
+    <div class="container-fluid">
+        <h1 class="text-center">Featured Locations</h1>
+        <div class="row mt-4">
+
+            <div class="col-md-4">
+                <div class="card mb-3" style="background-color: #81cdc6; border-radius:10px;">
+                    <img src="~/images/1.jpg" class="card-img-top" />
+                    <div class="card-body">
+                        <h5 class="card-title">Coron, Palawan</h5>
+                        <p class="card-text" style="font-size:14px;">
+                            Coron is an island paradise where crystal-clear waters meet dramatic limestone cliffs. Its hidden lagoons, vibrant coral reefs, and serene landscapes offer the perfect blend of adventure and tranquility.
+                        </p>
+                        <a href="#" class="btn btn-secondary btn-sm">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-3" style="background-color: #81cdc6; border-radius:10px;">
+                    <img src="~/images/2.jpg" class="card-img-top" />
+                    <div class="card-body">
+                        <h5 class="card-title">Intramuros</h5>
+                        <p class="card-text" style="font-size:14px;">
+                            Step into the heart of history with Intramuros – a timeless walled city where the past meets the present. Its cobblestone streets and colonial architecture tell the story of Manila's rich heritage.
+                        </p>
+                        <a href="#" class="btn btn-secondary btn-sm">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-3" style="background-color: #81cdc6; border-radius:10px;">
+                    <img src="~/images/7.jpg" class="card-img-top" />
+                    <div class="card-body">
+                        <h5 class="card-title">Mam-on Island, Siargao</h5>
+                        <p class="card-text" style="font-size:14px;">
+                            Escape to Mam-on, Siargao – a hidden paradise where lush landscapes meet crystal-clear waters. Pristine beaches, vibrant marine life, and serene atmosphere await.
+                        </p>
+                        <a href="#" class="btn btn-secondary btn-sm">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- EXISTING CAROUSEL -->
 <div id="carouselExample" class="carousel slide my-4" data-bs-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="~/images/1.jpg" class="d-block w-100"
-                 style="height: 500px; object-fit: cover;" />
+            <img src="~/images/1.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" />
         </div>
         <div class="carousel-item">
-            <img src="~/images/2.jpg" class="d-block w-100"
-                 style="height: 500px; object-fit: cover;" />
+            <img src="~/images/2.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" />
         </div>
         <div class="carousel-item">
-            <img src="~/images/3.jpg" class="d-block w-100"
-                 style="height: 500px; object-fit: cover;" />
+            <img src="~/images/3.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" />
         </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -51,35 +101,34 @@
     </button>
 </div>
 
-<div class="container-fluid px-5 mb-5"
-     style="
-        background-size: cover;
-        background-position: center;
-        border-radius: 10px;
-        padding: 50px 25px;
-        color: white;
-     ">
-    <div class="content-box"
-         style="
-            background: rgba(0, 0, 0, 0.5);
-            padding: 25px;
-            border-radius: 10px;
-         ">
-        <div class="row">
-            <div class="col-md-6">
-                <h1>Our Travel Journey</h1>
-                <p style="font-size: 17px;">
-                    At Explore Philippines, we believe every journey tells a story...
-                </p>
-                <p style="font-size: 17px;">
-                    We craft adventures that highlight natural beauty and local culture.
-                </p>
-            </div>
-            <div class="col-md-6">
-                <img src="~/images/6.jpg" class="img-fluid" style="border-radius: 10px;" />
-            </div>
+<!-- EXISTING TRAVEL JOURNEY SECTION -->
+<div class="container-fluid mb-5" style="padding-left:0; padding-right:0; color: white;">
+    <div class="row" style="margin:0; background: rgba(0,0,0,0.5);">
+        <div class="col-md-6" style="padding: 40px;">
+            <h1>Our Travel Journey</h1>
+            <p style="font-size: 18px;">
+                At Explore Philippines, we believe that every journey tells a unique story. We carefully curate travel experiences that allow you to immerse yourself in the diverse beauty of the Philippines, from its pristine beaches to the breathtaking mountains and vibrant cities. By partnering with local communities, we ensure that our tours not only provide unforgettable memories but also support the livelihoods of those who call these places home.
+            </p>
+            <p style="font-size: 18px;">
+                From the serene beauty of Luminous Cross Grace in Agdangan, Quezon, to the warm hospitality of its locals, our journey begins with a dedication to responsible travel and sustainability. Each corner of this tranquil destination reflects the soul of Quezon, offering an immersive experience in nature, spirituality, and local traditions. Every step taken here is a step toward embracing the peace and grace that this beautiful province has to offer.
+            </p>
+            <p><b>"Travel is the only thing you buy that makes you richer."</b></p>
+        </div>
+        <div class="col-md-6" style="padding:0;">
+            <img src="~/images/6.jpg" class="img-fluid" style="width:100%; height:100%; object-fit:cover;" />
         </div>
     </div>
 </div>
 
-
+<!-- SCRIPT TO TOGGLE EXPLORE CONTENT -->
+<script>
+    function toggleExploreContent() {
+        var content = document.getElementById("exploreContent");
+        if(content.style.display === "none") {
+            content.style.display = "block";
+            content.scrollIntoView({ behavior: 'smooth' });
+        } else {
+            content.style.display = "none";
+        }
+    }
+</script>

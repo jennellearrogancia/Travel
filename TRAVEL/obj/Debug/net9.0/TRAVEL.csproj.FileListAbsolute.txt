@@ -94,3 +94,4 @@ C:\Users\jenne\OneDrive\Desktop\TRAVEL\TRAVEL\obj\Debug\net9.0\refint\TRAVEL.dll
 C:\Users\jenne\OneDrive\Desktop\TRAVEL\TRAVEL\obj\Debug\net9.0\TRAVEL.pdb
 C:\Users\jenne\OneDrive\Desktop\TRAVEL\TRAVEL\obj\Debug\net9.0\TRAVEL.genruntimeconfig.cache
 C:\Users\jenne\OneDrive\Desktop\TRAVEL\TRAVEL\obj\Debug\net9.0\ref\TRAVEL.dll
+C:\Users\jenne\OneDrive\Desktop\TRAVEL\TRAVEL\obj\Debug\net9.0\TRAVEL.sourcelink.json
